@@ -11,11 +11,15 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
        super("==========================================\n========== Ticket Seller System ==========\n==========================================");
        print();
    }
+   Adult(String str){
+       System.out.println(str);
+   }
    public void getAmountAdult(){
        
        System.out.print("Enter Amount of Adult : ");
        AAdult = input.nextInt();
-       while(AAdult != 0){
+       
+       
        do{
        System.out.print("How many All ticket : ");
        AAllTK = input.nextInt();
@@ -25,7 +29,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
                     System.out.println("======== Try again ========");
             }
        }while((AAllTK + ASelectTK)!= AAdult);
-       }
+       
    }
    
    public void AdultAllTK(){

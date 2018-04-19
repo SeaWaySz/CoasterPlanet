@@ -1,6 +1,7 @@
 
 public class Bill extends Plaything {
     
+    
     Bill(){
         
         super.play.add("1.\tBlackhole Coaster");
@@ -21,6 +22,9 @@ public class Bill extends Plaything {
         super.play.add("14.\tTornado");
         super.play.add("15.\tViking");
 
+    }
+    Bill(String str){
+        System.out.println(str);
     }
     
     int getPrice(int choice,int total){
@@ -46,4 +50,41 @@ public class Bill extends Plaything {
         return total;
     }
     
+    void PrintBill(){
+        
+        int amount;
+        double total = 0;
+        Adult A = new Adult(":::::::::::::::::::::::::: Recipt :::::::::::::::::::::::::::");
+        Child C = new Child();
+        amount = A.getAAdult() + C.getAChild();
+        
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("Adult" + A.getAAdult() + "Unit");
+        System.out.println("\tAdult All Ticket\t" + A.AAllTK + "\t" + A.TotalAll + "THB");
+        System.out.println("\tAdult All Ticket\t" + A.ASelectTK + "\t" + A.TotalSelect + "THB");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("Child" + C.CAllTK + "Unit");
+        System.out.println("\tChild All Ticket\t" + C.CAllTK + "\t" + C.CTotalAll + "THB");
+        System.out.println("\tAdult All Ticket\t" + C.CSelectTK + "\t" + (C.CTotalSelect + C.CTotalCantSelect) + "THB");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+        if(amount >= 10){
+            System.out.println("\t\tDiscount 15%");
+            total = (A.getTotal() + C.getTotal()) - ((A.getTotal() + C.getTotal()) * 0.15);
+        }
+        else if(amount >= 7){
+            System.out.println("\t\tDiscount 10%");
+            total = (A.getTotal() + C.getTotal()) - ((A.getTotal() + C.getTotal()) * 0.10);
+        }
+        else if(amount >= 5){
+            System.out.println("\t\tDiscount 5%");
+            total = (A.getTotal() + C.getTotal()) - ((A.getTotal() + C.getTotal()) * 0.05);
+        }
+        
+            System.out.println(":::::::::::::::::: Total is " + total + " ::::::::::::::::::");
+            System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::            Have Fun!!!          ::::::::::::::");
+ 
+        }  
 }

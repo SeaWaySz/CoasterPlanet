@@ -4,7 +4,7 @@ import java.util.ArrayList;
 abstract class Plaything {
         
         ArrayList play = new ArrayList();
-        
+               
 }
 
 interface AllTK{
