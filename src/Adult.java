@@ -15,6 +15,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
        
        System.out.print("Enter Amount of Adult : ");
        AAdult = input.nextInt();
+       while(AAdult != 0){
        do{
        System.out.print("How many All ticket : ");
        AAllTK = input.nextInt();
@@ -24,7 +25,9 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
                     System.out.println("======== Try again ========");
             }
        }while((AAllTK + ASelectTK)!= AAdult);
+       }
    }
+   
    public void AdultAllTK(){
        TotalAll = AllTKCal(AAllTK);
    }
@@ -56,6 +59,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    public int getAAdult(){
        return AAdult;
    }
+   
    public void ChildAllTK(){}
    public void ChildSeTK(){}
 
