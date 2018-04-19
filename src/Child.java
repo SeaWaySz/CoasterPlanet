@@ -10,6 +10,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
        
        System.out.print("Enter Amount of Child : ");
        AChild = input.nextInt();
+    while(AChild != 0){
        do{
        System.out.print("How many All ticket : ");
        CAllTK = input.nextInt();
@@ -19,7 +20,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
                     System.out.println("======== Try again ========");
             }
        }while((CAllTK + CSelectTK)!= AChild);
-       
+    }  
    }
   
    public void ChildAllTK(){
