@@ -8,7 +8,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    Scanner input = new Scanner(System.in);
        
    Adult(){
-       super();
+       super("==========================================\n========== Ticket Seller System ==========\n==========================================");
        print();
    }
    public void getAmountAdult(){
