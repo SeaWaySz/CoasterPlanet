@@ -17,7 +17,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
        System.out.print("How many Select ticket : ");
        CSelectTK = input.nextInt();
             if((CAllTK + CSelectTK)!= AChild){
-                    System.out.println("======== Try again ========");
+                    System.out.println("========== Try again ==========");
             }
        }while((CAllTK + CSelectTK)!= AChild);
     }

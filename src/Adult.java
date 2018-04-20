@@ -23,7 +23,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
        System.out.print("How many Select ticket : ");
        ASelectTK = input.nextInt();
             if((AAllTK + ASelectTK)!= AAdult){
-                    System.out.println("======== Try again ========");
+                    System.out.println("========== Try again ==========");
             }
        }while((AAllTK + ASelectTK)!= AAdult);
     }   
