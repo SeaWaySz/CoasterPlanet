@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Child extends Ch_Calculator implements AllTK,SelectTK {
    
-   int CAllTK,CSelectTK,CantSelect;
-   int CTotalAll,CTotalSelect,CTotalCantSelect;
+   public int CAllTK,CSelectTK,CantSelect;
+   public int CTotalAll,CTotalSelect,CTotalCantSelect;
    private int Total,AChild;
    Scanner input = new Scanner(System.in);
    
@@ -10,7 +10,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
        
        System.out.print("Enter Amount of Child : ");
        AChild = input.nextInt();
-    
+    if(AChild > 0){
        do{
        System.out.print("How many All ticket : ");
        CAllTK = input.nextInt();
@@ -20,19 +20,23 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
                     System.out.println("======== Try again ========");
             }
        }while((CAllTK + CSelectTK)!= AChild);
-     
+    }
    }
   
    public void ChildAllTK(){
-       CTotalAll = CAllTKCal(CAllTK);
+       this.CTotalAll = CAllTKCal(CAllTK);
    }
    
    public void ChildSeTK(){
-       if(CSelectTK > 0){
-       CantSelect = Maturement(CSelectTK);
-       CSelectTK = CSelectTK - CantSelect;
-       CTotalSelect = CSelectTKCal(CSelectTK);
-       CTotalCantSelect = CSelectTKDontMatchCal(CantSelect);
+       if(this.CSelectTK > 0){
+       this.CantSelect = Maturement(CSelectTK);
+       this.CSelectTK = CSelectTK - CantSelect;
+       if(this.CSelectTK > 0){
+       this.CTotalSelect = CSelectTKCal(CSelectTK);
+       }
+       if(this.CantSelect > 0){
+       this.CTotalCantSelect = CSelectTKDontMatchCal(this.CantSelect);
+       }
        }
    }
    
@@ -54,7 +58,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
        getAmountChild();
        ChildAllTK();
        ChildSeTK();
-       this.Total = CTotalAll + CTotalSelect + CTotalCantSelect;
+       this.Total = this.CTotalAll + this.CTotalSelect + this.CTotalCantSelect;
        System.out.println("Total is : " + this.Total);
    }
    
