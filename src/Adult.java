@@ -42,12 +42,10 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    }
    
    void print(){
-   
        getAmountAdult();
        AdultAllTK();
        AdultSeTK();
-       Total = TotalAll + TotalSelect;
-       
+       Total = TotalAll + TotalSelect;    
    }
    
    void printTop(){   

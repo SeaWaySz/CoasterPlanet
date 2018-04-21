@@ -55,8 +55,8 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
            System.out.println("======================================");
        }
        do{
-            System.out.print("How many child who can't select all plaything : ");
-            amount2 = input.nextInt();
+           System.out.print("How many child who can't select all plaything : ");
+           amount2 = input.nextInt();
        }while(amount2 > amount || amount2 < 0);
        return amount2;
    }

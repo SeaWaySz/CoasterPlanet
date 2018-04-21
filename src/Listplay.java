@@ -1,10 +1,7 @@
 
 public class Listplay extends Bill {
-    
-  
-    
-    void printPlayAll(){
-        
+      
+    void printPlayAll(){ 
         System.out.println("1" + play.get(0));
         System.out.println("2" + play.get(1));
         System.out.println("3" + play.get(2));
@@ -23,8 +20,7 @@ public class Listplay extends Bill {
         System.out.println("======== Press 0 to exit =======");
     }
     
-    void printPlaySome(){
-        
+    void printPlaySome(){    
         System.out.println("1" + play.get(0));
         System.out.println("2" + play.get(1));
         System.out.println("3" + play.get(2));

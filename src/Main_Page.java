@@ -7,10 +7,8 @@ public class Main_Page {
         Adult A = new Adult();
         Child C = new Child();
         C.print();
-        
-        
-        
         amount = A.getAAdult() + C.getAChild();
+        
     if(amount != 0){
         System.out.println("\n");
         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
@@ -40,7 +38,6 @@ public class Main_Page {
         else{
             total = (A.getTotal() + C.getTotal());
         }
-        
             System.out.println("::::::::::::::::::: Total is \t" + total + " :::::::::::::::::::::");
             System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
             System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
