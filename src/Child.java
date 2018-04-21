@@ -61,7 +61,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
        ChildAllTK();
        ChildSeTK();
        this.Total = this.CTotalAll + this.CTotalSelect + this.CTotalCantSelect;
-       System.out.println("Total is : " + this.Total);
+       
    }
    
    public void setTotal(int total){

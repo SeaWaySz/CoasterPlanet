@@ -46,7 +46,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
        AdultAllTK();
        AdultSeTK();
        Total = TotalAll + TotalSelect;
-       System.out.println("Total is : " + Total);
+       
    }
    
    public void setTotal(int total){
