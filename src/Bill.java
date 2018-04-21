@@ -23,9 +23,8 @@ public class Bill extends Plaything {
         super.play.add(".\tViking\t\t40THB.");
 
     }
-    Bill(String str){
-        System.out.println(str);
-    }
+   
+    
     
     int getPrice(int choice,int total){
 
