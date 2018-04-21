@@ -4,23 +4,23 @@ public class Bill extends Plaything {
     
     Bill(){
         
-        super.play.add("1.\tBlackhole Coaster");
-        super.play.add("2.\tCable Car");
-        super.play.add("3.\tFlying Fish");
-        super.play.add("4.\tGiant Drop");
-        super.play.add("5.\tGiant's House");
+        super.play.add(".\tBlackhole Coaster");
+        super.play.add(".\tCable Car");
+        super.play.add(".\tFlying Fish");
+        super.play.add(".\tGiant Drop");
+        super.play.add(".\tGiant's House");
         
-        super.play.add("6.\tGo Cart");
-        super.play.add("7.\tGrand Canyon");
-        super.play.add("8.\tHerricane");
-        super.play.add("9.\tLighting Bird");
-        super.play.add("10.\tLighting Space");
+        super.play.add(".\tGo Cart");
+        super.play.add(".\tGrand Canyon");
+        super.play.add(".\tHerricane");
+        super.play.add(".\tLighting Bird");
+        super.play.add(".\tLighting Space");
         
-        super.play.add("11.\tSky Coaster");
-        super.play.add("12.\tSnow Land");
-        super.play.add("13.\tSuper Splash");
-        super.play.add("14.\tTornado");
-        super.play.add("15.\tViking");
+        super.play.add(".\tSky Coaster");
+        super.play.add(".\tSnow Land");
+        super.play.add(".\tSuper Splash");
+        super.play.add(".\tTornado");
+        super.play.add(".\tViking");
 
     }
     Bill(String str){

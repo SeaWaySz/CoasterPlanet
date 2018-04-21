@@ -13,15 +13,16 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    }
    
    public void getAmountAdult(){
-       
+    do{   
        System.out.print("Enter Amount of Adult : ");
        AAdult = input.nextInt();
+    }while(AAdult < 0);
     if(AAdult > 0){
        do{
-       System.out.print("How many All ticket : ");
-       AAllTK = input.nextInt();
-       System.out.print("How many Select ticket : ");
-       ASelectTK = input.nextInt();
+                System.out.print("How many All ticket : ");
+                AAllTK = input.nextInt();
+                System.out.print("How many Select ticket : ");
+                ASelectTK = input.nextInt();
             if((AAllTK + ASelectTK)!= AAdult){
                     System.out.println("========== Try again ==========");
             }

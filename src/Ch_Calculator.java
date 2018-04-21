@@ -32,6 +32,13 @@ public class Ch_Calculator extends Bill  {
         do{
             System.out.print("Enter Customer Choice : ");
             choice = input.nextInt();
+            switch(choice){
+                case 4 : choice = 5; break;
+                case 5 : choice = 6; break;
+                case 6 : choice = 7; break;
+                case 7 : choice = 9; break;
+                case 8 : choice = 10; break;
+            }
             totalCant = totalCant + getPrice(choice,total);
            
         }while(choice != 0);

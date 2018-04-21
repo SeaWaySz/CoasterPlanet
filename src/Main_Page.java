@@ -1,6 +1,7 @@
 
-public class Main_Page extends Plaything {
+public class Main_Page {
     public static void main(String[] args){
+        
         int amount;
         double total = 0;
         Adult A = new Adult();
@@ -15,11 +16,11 @@ public class Main_Page extends Plaything {
         System.out.println(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println("Adult\t" + A.getAAdult() + "\tUnit");
         System.out.println("\tAdult All Ticket\t" + A.AAllTK + "\t" + A.TotalAll + "\tTHB");
-        System.out.println("\tAdult SELECT Ticket\t" + A.ASelectTK + "\t" + A.TotalSelect + "\tTHB");
+        System.out.println("\tAdult Select Ticket\t" + A.ASelectTK + "\t" + A.TotalSelect + "\tTHB");
         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println("Child\t" + C.getAChild() + "\tUnit");
         System.out.println("\tChild All Ticket\t" + C.CAllTK + "\t" + C.CTotalAll + "\tTHB");
-        System.out.println("\tChild SELECT Ticket\t" + C.CSelectTK + "\t" + (C.CTotalSelect + C.CTotalCantSelect) + "\tTHB");
+        System.out.println("\tChild Select Ticket\t" + C.CSelectTK + "\t" + (C.CTotalSelect + C.CTotalCantSelect) + "\tTHB");
         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         if(amount >= 10){
