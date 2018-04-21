@@ -4,6 +4,7 @@ public class Main_Page {
         
         int amount;
         double total = 0;
+        
         Adult A = new Adult();
         Child C = new Child();
         C.print();

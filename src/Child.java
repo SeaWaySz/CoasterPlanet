@@ -30,16 +30,22 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
    }
    
    public void ChildSeTK(){
+       
        if(this.CSelectTK > 0){
-       this.CantSelect = Maturement(CSelectTK);
-       this.CSelectTK = CSelectTK - CantSelect;
-       if(this.CSelectTK > 0){
-       this.CTotalSelect = CSelectTKCal(CSelectTK);
-       }
+            this.CantSelect = Maturement(CSelectTK);
+            this.CSelectTK = CSelectTK - CantSelect;
+          if(this.CSelectTK > 0){
+              
+                    this.CTotalSelect = CSelectTKCal(CSelectTK);
+                    
+          }
+          
        if(this.CantSelect > 0){
-       this.CTotalCantSelect = CSelectTKDontMatchCal(this.CantSelect);
+           
+            this.CTotalCantSelect = CSelectTKDontMatchCal(this.CantSelect);
+            
        }
-       }
+      }
    }
    
    int Maturement(int amount){
@@ -49,8 +55,8 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
            System.out.println("======================================");
        }
        do{
-       System.out.print("How many child who can't select all plaything : ");
-       amount2 = input.nextInt();
+            System.out.print("How many child who can't select all plaything : ");
+            amount2 = input.nextInt();
        }while(amount2 > amount && amount2 < 0);
        return amount2;
    }

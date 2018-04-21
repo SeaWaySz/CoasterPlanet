@@ -36,7 +36,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    }
    public void AdultSeTK(){
        if(ASelectTK > 0){
-       TotalSelect = SelectTKCal(ASelectTK);
+            TotalSelect = SelectTKCal(ASelectTK);
        }
    }
    
