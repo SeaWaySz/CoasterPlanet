@@ -4,7 +4,6 @@ public class Main_Page {
         
         int amount;
         double total = 0;
-        
         Adult A = new Adult();
         Child C = new Child();
         C.print();
@@ -12,7 +11,11 @@ public class Main_Page {
         
         
         amount = A.getAAdult() + C.getAChild();
-        Bill B = new Bill(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n:::::::::::::::::::::::::: Reciept ::::::::::::::::::::::::::\n:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+    if(amount != 0){
+        System.out.println("\n");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::    Reciept    :::::::::::::::::::::::");
+        System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
         System.out.println("Adult\t" + A.getAAdult() + "\tUnit");
         System.out.println("\tAdult All Ticket\t" + A.AAllTK + "\t" + A.TotalAll + "\tTHB");
         System.out.println("\tAdult Select Ticket\t" + A.ASelectTK + "\t" + A.TotalSelect + "\tTHB");
@@ -39,9 +42,11 @@ public class Main_Page {
         }
         
             System.out.println("::::::::::::::::::: Total is \t" + total + " :::::::::::::::::::::");
-            
-        B.printRe();
- 
+            System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::            Have Fun!!!          ::::::::::::::");
+    }
+    
         
     }
        

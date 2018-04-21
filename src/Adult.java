@@ -8,7 +8,8 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    Scanner input = new Scanner(System.in);
        
    Adult(){
-       super("==========================================\n========== Ticket Seller System ==========\n==========================================");
+       super("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n:::::::::::::::::::Ticket Seller System:::::::::::::::::::::\n::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+       printTop();
        print();
    }
    
@@ -47,6 +48,10 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
        AdultSeTK();
        Total = TotalAll + TotalSelect;
        
+   }
+   
+   void printTop(){   
+       printRec();   
    }
    
    public void setTotal(int total){

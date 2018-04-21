@@ -14,6 +14,10 @@ public class Ad_Calculator extends Bill {
         System.out.println(str);
     }
     
+    void printRec(){
+       printRe();
+    }
+    
     int AllTKCal(int Amount){
         int total= 0;
         total = 800*Amount;
