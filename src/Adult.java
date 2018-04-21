@@ -13,6 +13,7 @@ public class Adult extends Ad_Calculator implements AllTK,SelectTK {
    }
    
    public void getAmountAdult(){
+       System.out.println("\n:::::::::::::::::::::::::: Adult Ticket :::::::::::::::::::::::::::");
     do{   
        System.out.print("Enter Amount of Adult : ");
        AAdult = input.nextInt();

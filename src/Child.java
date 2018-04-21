@@ -7,6 +7,7 @@ public class Child extends Ch_Calculator implements AllTK,SelectTK {
    Scanner input = new Scanner(System.in);
    
    void getAmountChild(){
+       System.out.println("\n:::::::::::::::::::::::::: Child Ticket :::::::::::::::::::::::::::");
     do{   
        System.out.print("Enter Amount of Child : ");
        AChild = input.nextInt();
