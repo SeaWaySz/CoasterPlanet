@@ -49,5 +49,10 @@ public class Bill extends Plaything {
         }
         return total;
     }
- 
+    
+    void printRe(){
+            System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+            System.out.println(":::::::::::::            Have Fun!!!          ::::::::::::::");
+    };
 }

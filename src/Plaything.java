@@ -1,11 +1,13 @@
 
 import java.util.ArrayList;
 
-abstract class Plaything {
+abstract class Plaything extends PrintReciept {
         
         ArrayList play = new ArrayList();
-               
+        abstract void printRe();       
 }
+
+
 
 interface AllTK{
     public void ChildAllTK();
